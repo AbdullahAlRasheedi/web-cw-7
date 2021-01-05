@@ -16,15 +16,37 @@
       // 1
       /* قم بإنشاء مصفوفتين
         اللي إنت اتابعها Animeتحتوي على مسلسلات ال myAnime المصفوفة الأولى
+        */
+       let myAnime = [
+         `attack on titan` ,
+         `naroto`,
+         `demon slyer`,
+         `fullmatal alchemist`,
+      ];
+       /*
         اللي رفيجك يتابعها Animeتحتوي على مسلسلات ال myFriendAnime المصفوفة الثانية
       */
+      let myFriendAnime = [
+        `one punch man`,
+        `one piece`,
+        `fullmatal alchemist`,
+        `attack on titan`,
+      ]
 
       // 2
       // mutualAnime عرف مصفوفة فاضية سمها
-
+      let mutualAnime = [];
       // mutualAnimeقارن المصفوفتين وضيف المسلسلات المشتركة ل
-
       // consoleفي ال mutualAnime اطبع
+      for (let i = 0; i < myAnime.length; i++) {
+          for (let j = 0; j < myFriendAnime[i].length; j++) {
+            if(myAnime[i] == myFriendAnime[j]){
+              mutualAnime.push(myAnime[i]);
+          }
+          
+        }
+      }
+      
 
       // ودك تشوف اللستة المشتركة بينكم على الموقع؟
       // 🏃🏻‍♂️ ادخل على صفحة الموقع في المتصفح
